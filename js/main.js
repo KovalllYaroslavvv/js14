@@ -18,7 +18,7 @@ function defUpperStr(str) {
   return (str || 'Default text').toUpperCase();
 }
 
-console.log(defUpperStr('My text')); // MY TEXT
+console.log(defUpperStr('My text'));
 console.log(defUpperStr());
 
 // #4
@@ -30,9 +30,9 @@ function evenFn(n) {
   return arr;
 }
 
-console.log(evenFn(10)); // [2, 4, 6, 8, 10]
-console.log(evenFn(15)); // [2, 4, 6, 8, 10, 12, 14]
-console.log(evenFn(20)); // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+console.log(evenFn(10));
+console.log(evenFn(15));
+console.log(evenFn(20));
 
 // #5
 function weekFn(cond) {
@@ -67,12 +67,12 @@ function weekFn(cond) {
   return str;
 }
 
-console.log(weekFn(1)); // 'Понедельник'
-console.log(weekFn(3)); // 'Среда'
-console.log(weekFn(7)); // 'Воскресенье'
-console.log(weekFn(9)); // null
-console.log(weekFn(1.5)); // null
-console.log(weekFn('2')); // null
+console.log(weekFn(1));
+console.log(weekFn(3));
+console.log(weekFn(7));
+console.log(weekFn(9));
+console.log(weekFn(1.5));
+console.log(weekFn('2'));
 
 // #6
 function ageClassification(num) {
@@ -93,21 +93,21 @@ function ageClassification(num) {
     : null;
 }
 
-console.log('    -1 :', ageClassification(-1)); // -1 : null
-console.log('     1 :', ageClassification(1)); // 1 : детский возраст
-console.log('    24 :', ageClassification(24)); // 24 : детский возраст
-console.log(' 24.01 :', ageClassification(24.01)); // 24.01 : молодой возраст
-console.log('    44 :', ageClassification(44)); // 44 : молодой возраст
-console.log(' 44.01 :', ageClassification(44.01)); // 44.01 : средний возраст
-console.log('    65 :', ageClassification(65)); // 65 : средний возраст
-console.log('  65.1 :', ageClassification(65.1)); // 65.1 : пожилой возраст
-console.log('    75 :', ageClassification(75)); // 75 : пожилой возраст
-console.log(' 75.01 :', ageClassification(75.01)); // 75.01 : старческий возраст
-console.log('    90 :', ageClassification(90)); 
-console.log(' 90.01 :', ageClassification(90.01)); 
-console.log('   122 :', ageClassification(122)); 
-console.log('122.01 :', ageClassification(122.01)); 
-console.log('   150 :', ageClassification(150)); 
+console.log('    -1 :', ageClassification(-1));
+console.log('     1 :', ageClassification(1));
+console.log('    24 :', ageClassification(24));
+console.log(' 24.01 :', ageClassification(24.01));
+console.log('    44 :', ageClassification(44));
+console.log(' 44.01 :', ageClassification(44.01));
+console.log('    65 :', ageClassification(65));
+console.log('  65.1 :', ageClassification(65.1));
+console.log('    75 :', ageClassification(75));
+console.log(' 75.01 :', ageClassification(75.01));
+console.log('    90 :', ageClassification(90));
+console.log(' 90.01 :', ageClassification(90.01));
+console.log('   122 :', ageClassification(122));
+console.log('122.01 :', ageClassification(122.01));
+console.log('   150 :', ageClassification(150));
 
 // #7
 function oddFn(n) {
@@ -119,9 +119,9 @@ function oddFn(n) {
   return arr;
 }
 
-console.log(oddFn(10)); 
-console.log(oddFn(15)); 
-console.log(oddFn(20)); 
+console.log(oddFn(10));
+console.log(oddFn(15));
+console.log(oddFn(20));
 
 //#8
 function mainFunc(a, b, cb) {
@@ -142,7 +142,7 @@ function cbAdd(a, b) {
   return a + b;
 }
 
-console.log(mainFunc(2, 5, cbRandom)); 
-console.log(mainFunc(2, 5, cbPow)); 
-console.log(mainFunc(2, 5, cbAdd)); 
+console.log(mainFunc(2, 5, cbRandom));
+console.log(mainFunc(2, 5, cbPow));
+console.log(mainFunc(2, 5, cbAdd));
 console.log(mainFunc(2, 5, 'not a func'));
